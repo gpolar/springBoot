@@ -16,7 +16,7 @@ public class AccountController {
 	
 	@RequestMapping("/accounts")
 	public Account[] all(){
-		logger.info("accounts-microservice all() invoked-");
+		logger.info("accounts-microservice all() invoked--");
 		List<Account> accounts = accountRepository.getAll();
 		logger.info("accounts-microservice all() found: "+ accounts.size());
 		return accounts.toArray(new Account[accounts.size()]);
